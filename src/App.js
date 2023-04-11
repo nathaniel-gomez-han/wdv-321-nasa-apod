@@ -3,29 +3,30 @@ import './App.css';
 import {getPictureOfTheDay} from "./api";
 
 function App() {
-  const [count, setCount] = React.useState(0);
+  const [apodDetails, setApodDetails] = React.useState(null);
 
   React.useEffect(() => {
-    console.log('use effect');
-
     const getPicture = async () => {
       const response = await getPictureOfTheDay();
-      console.log('response: ' + response);
+      setApodDetails(response);
     }
     getPicture();
-
   }, []);
 
-  React.useEffect(() => {
-    console.log('use effect from count change');
-  }, [count]);
+  console.log('apod details', apodDetails);
 
   return (
     <div className="App">
-      <button
-        onClick={() => setCount(count + 1)}>Increase Count</button>
       <h1>NASA Astronomy Picture of the Day</h1>
-      <img src={''}/>
+      {
+        apodDetails ?
+          <>
+            <img src={apodDetails.url}/>
+            <div>{apodDetails.copyright}</div>
+          </>
+          :
+          <p>Loading...</p>
+      }
     </div>
   );
 }
