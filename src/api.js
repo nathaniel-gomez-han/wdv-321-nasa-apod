@@ -4,6 +4,7 @@ const API_URL_BASE = "https://api.nasa.gov/planetary/apod";
 
 export const getPictureOfTheDay = async () => {
 	const apiUrl = `${API_URL_BASE}?api_key=${NASA_API_KEY}`;
+
 	const response = await fetch(apiUrl);
 
 	console.log('response from NASA: ', response);
