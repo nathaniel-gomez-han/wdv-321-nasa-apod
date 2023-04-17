@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wdv-321-nasa-apod/static/css/main.073c9b0a.css",
+    "main.js": "/wdv-321-nasa-apod/static/js/main.d5cfbbf6.js",
+    "static/js/787.4b798eec.chunk.js": "/wdv-321-nasa-apod/static/js/787.4b798eec.chunk.js",
+    "index.html": "/wdv-321-nasa-apod/index.html",
+    "main.073c9b0a.css.map": "/wdv-321-nasa-apod/static/css/main.073c9b0a.css.map",
+    "main.d5cfbbf6.js.map": "/wdv-321-nasa-apod/static/js/main.d5cfbbf6.js.map",
+    "787.4b798eec.chunk.js.map": "/wdv-321-nasa-apod/static/js/787.4b798eec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.d5cfbbf6.js"
+  ]
+}
